@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { AppRoutingModule } from '../app-routing.module';
+import { ProductAlertsComponent } from '../product-alerts/product-alerts.component';
 
 import { ProductListComponent } from './product-list.component';
 
@@ -8,9 +10,9 @@ describe('ProductListComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ProductListComponent],
+      declarations: [ProductListComponent, ProductAlertsComponent],
+      imports: [AppRoutingModule],
     }).compileComponents();
-
     fixture = TestBed.createComponent(ProductListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
