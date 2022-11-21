@@ -5,7 +5,7 @@ import { Product, products } from '../products';
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
-  styleUrls: ['./product-list.component.scss']
+  styleUrls: ['./product-list.component.scss'],
 })
 export class ProductListComponent {
   products: Product[] = products;
@@ -15,6 +15,6 @@ export class ProductListComponent {
   }
 
   onNotify() {
-    window.alert("You will be notified when the product goes on sale");
+    window.alert('You will be notified when the product goes on sale');
   }
 }
